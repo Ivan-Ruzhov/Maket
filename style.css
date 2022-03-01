@@ -1,0 +1,524 @@
+
+    @font-face {
+        font-family: "TT Lakes";
+        src: local("TTLakes-Regular"),
+        url("fonts/TTLakes-Regular.ttf");
+        font-style: normal;
+        font-weight: 400;
+
+    }
+    @font-face {
+        font-family: "TT Lakes";
+        src: local("TTLakes-Medium"),
+        url("fonts/TTLakes-Medium.ttf");
+        font-style: normal;
+        font-weight: 500;
+
+    }
+    @font-face {
+        font-family: "TT Lakes";
+        src: local("TTLakes-Bold"),
+        url("fonts/TTLakes-Bold.ttf");
+        font-style: normal;
+        font-weight: 700;
+    }
+    html {
+        box-sizing: border-box;
+    }
+    .body {
+        font-family: "TT Lakes", serif;
+        width: auto;
+        height: auto;
+        background: #F8F8F8;
+
+    }
+
+    .menu {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .chat,
+    .profile,
+    .call,
+    .menu__devider-two{
+        display: none;
+    }
+
+
+    .menu__button {
+        background-color: #FFFFFF;
+        border: 0;
+
+    }
+    .repair-two {
+        position: relative;
+        right: 232px;
+    }
+
+    .check_status-two {
+        position: relative;
+        right: 32px;
+    }
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background: #F8F8F8;
+    }
+
+    .page__header {
+        width: 304px;
+        height: 40px;
+        margin-left: 16px;
+    }
+
+    .page__tittle {
+        font-family: "TT Lakes", serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        margin-left: 12px;
+        box-sizing: border-box;
+    }
+
+    .page__header::before {
+        content: url("picture/main/highlight.svg");
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 4px;
+        height: 40px;
+        margin-right: 12px;
+        margin-left: -8px;
+    }
+    .main-button {
+        display: none;
+    }
+    .page__group {
+        margin-top: 24px;
+        margin-left: 16px;
+        white-space: nowrap;
+        vertical-align: top;
+        overflow-y: hidden;
+        overflow-x: auto;
+        width: auto;
+        height: 45px;
+        justify-content: space-around;
+
+    }
+
+    .page__group::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    .page__div {
+        display: inline-block;
+    }
+    .page__link {
+        font-family: "TT Lakes", serif;
+        color: #7E7E82;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 24px;
+        width: auto;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .page__div:first-of-type a {
+        padding: 8px 9px 8px 15px;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        background: #FFFFFF;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .page__div:last-of-type a {
+        margin-right: 16px;
+
+    }
+
+    .repaired-brands{
+
+    }
+
+
+    .company {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .company__text {
+        font-size: 14px;
+        vertical-align: top;
+        letter-spacing: 0.2px;
+        text-align: left;
+        flex-wrap: wrap;
+        margin: 24px 16px 16px;
+        line-height: 18px;
+        max-width: 288px;
+        height: 90px;
+        overflow: hidden;
+    }
+    .company__first-p {
+        margin: 0;
+    }
+    .company__footer {
+        display: flex;
+        position: relative;
+    }
+
+    .company__more {
+        font-family: TT Lakes serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        border: 0;
+        padding: 0;
+        background: #F8F8F8;
+    }
+
+    .company__button {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        padding: 0;
+    }
+
+    .company__button::before {
+        content: url("picture/main/button_more.svg");
+        margin-left: 24px;
+        margin-right: 16px;
+    }
+
+    .company__plate {
+        width: 320px;
+        height: 230px;
+        background-image: url("picture/main/cps-plate.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        margin-left: -12px;
+    }
+
+
+
+@media (min-width: 768px) {
+    .body {
+        font-family: "TT Lakes", serif;
+        width: auto;
+        height: 504px;
+        background: #F8F8F8;
+    }
+    .menu {
+        position: relative;
+        width: auto;
+        height: 88px;
+        margin-right: 16px;
+    }
+
+    .chat,
+    .call,
+   .profile,
+    .menu__devider-two{
+        display: block;
+    }
+
+    .burger {
+        position: absolute;
+        left: 3.06%;
+        top: 24px;
+    }
+
+    .menu__devider-one {
+        position: absolute;
+        top: 28px;
+        left: 84px;
+        height: 32px;
+    }
+
+    .menu__devider-two {
+        position: absolute;
+        top: 28px;
+        right: 140px;
+        height: 32px;
+    }
+
+    .logo {
+       position: absolute;
+        top: 19px;
+        left: 13.61%;
+    }
+
+    .call {
+        position: absolute;
+        top: 24px;
+        left: 57.91%;
+    }
+
+    .chat {
+        position: absolute;
+        top: 24px;
+        left: 65.05%;
+    }
+
+    .profile {
+        position: absolute;
+        top: 24px;
+        left: 72.19%;
+    }
+
+    .repair {
+        position: absolute;
+        top: 24px;
+        left: 82.65%;
+    }
+
+    .check_status {
+        position: absolute;
+        top: 24px;
+        left:89.8%;
+    }
+
+    .page__group {
+        margin-left: 24px;
+        margin-top: 40px;
+    }
+
+    .repaired-brands{
+        margin-left: 0;
+    }
+
+    .page__title {
+        margin-top: 24px;
+        margin-left: 20px;
+        margin-bottom: 32px;
+    }
+
+   .repaired-devices {
+       margin-left: 0;
+   }
+
+
+
+   .page {
+       margin-right: 15px;
+   }
+    .page__header::before {
+        content: url("picture/main/highlight.svg");
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 4px;
+        height: 40px;
+        margin-bottom: 32px;
+        margin-left: -8px;
+    }
+
+    .page__header {
+        margin-left: 0;
+    }
+
+
+    .company {
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .company__text {
+        max-width: 312px;
+        height: 160px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 24px;
+        margin-bottom: 10px;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .company__button {
+        position: absolute;
+        top: 200px;
+        left: 0;
+    }
+
+    .company__plate {
+        position: absolute;
+        top: 23px;
+        left: 384px;
+        border-top-left-radius: 2%;
+        width :360px;
+        height: 260px;
+
+    }
+
+}
+    @media (min-width: 1120px){
+        .body{
+            width: 1120px;
+            height: 535px;
+            position: relative;
+        }
+
+        .menu {
+            display: none;
+        }
+        .menu__repair::before {
+            content: "Оставить заявку";
+            position: absolute;
+            top: 30px;
+            right: 8px;
+            width: 125px;
+            height: 24px;
+            font-family: "TT Lakes", serif;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .menu__check_status::before{
+            content: "Статус ремонта";
+            position: absolute;
+            top: 30px;
+            right: 9px;
+            width: 119px;
+            height: 24px;
+            font-family: "TT Lakes", serif;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .page {
+
+            width: auto;
+            height: 535px;
+            z-index: 1;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .page__header::before {
+            width: 3px;
+            top: 42px;
+        }
+
+        .page__title {
+            margin-top: 42px;
+            margin-bottom: 8px;
+        }
+
+        .main-button {
+            display: flex;
+            height: 40px;
+            align-self: center;
+            line-height: 24px;
+            background: #F8F8F8;;
+        }
+
+        .page__button {
+            border: 0;
+            background: #F8F8F8;;
+        }
+
+        .page__repair{
+            position: relative;
+            top: 15px;
+            left: 300px;
+        }
+
+        .page__check_status {
+            position: relative;
+            top: 15px;
+            left: 350px;
+        }
+
+        .repair-main::before {
+            content: "Оставить заявку";
+            position: relative;
+            top: -15px;
+            left: -20px;
+            font-family: "TT Lakes", serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .check_status-main::before {
+            content: "Статус ремонта";
+            position: relative;
+            top: -15px;
+            left: -20px;
+            font-family: "TT Lakes", serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        .page__group {
+            position: relative;
+
+            justify-content: space-between;
+            margin-top: 8px;
+            white-space: normal;
+            margin-left: 32px;
+            width: 1063px;
+            height: 82px;
+            letter-spacing: -0.2px;
+            overflow: hidden;
+        }
+
+        .page__div:first-of-type a {
+            padding: 8px 21px 8px 22px;
+        }
+
+        .page__div {
+            margin-top: 8px;
+        }
+
+
+
+        .page__group .page__div:nth-last-of-type(2){
+            margin-left: 24px;
+        }
+
+
+        .company__text {
+            position: relative;
+            top:-70px;
+            max-width: 490px;
+            height: 160px;
+            margin-left: 34px;
+            margin-right: 0;
+        }
+
+        .company__button {
+            position: absolute;
+            top:115px;
+            margin-top: 4px;
+            margin-left: 18px;
+        }
+
+        .company__plate {
+            position: absolute;
+            top: -55px;
+            left: 560px;
+            width: 531px;
+            height: 382px;
+            background-size: 531px;
+            background-position: top;
+            border-top-left-radius: 2%;
+            margin-left: 0;
+        }
+    }
