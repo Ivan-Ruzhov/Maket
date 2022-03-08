@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,39 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-        <nav class="menu">
-            <div class="menu__burger button"> <button class="menu__button burger"> <img src="picture/header/menu_logo.svg" alt="menu-logo"></button></div>
-            <div class="menu__devider-one button"><img src="picture/header/divider.svg" alt=""> </div>
-            <div class="menu__logo button"> <a class=" menu__link  logo" href="#"><img src="picture/header/company_logo.svg" alt="company-logo"></a> </div>
-            <div class="menu__call button"><button class="menu__button call"><img src="picture/header/call.svg" alt=""></button></div>
-            <div class="menu__chat button"><button class="menu__button chat"><img src="picture/header/chat.svg" alt=""></button></div>
-            <div class="menu__profile button"><button class="menu__button profile"><img src="picture/header/profile.svg" alt=""></button></div>
-            <div class="menu__devider-two button"><img src="picture/header/divider-two.svg" alt=""></div>
-            <div class="menu__repair button"> <button class="menu__button repair"><img src="picture/header/repair.svg" alt="repair-logo"></button> </div>
-            <div class="menu__check_status button"><button class="menu__button check_status"><img src="picture/header/check_status.svg" alt="check_status-logo"></button> </div>
-        </nav>
+<header class="header">
+        <div class="menu">
+            <div class="menu__left">
+                <button class="menu__burger menu__button"> <img src="picture/header/menu_logo.svg" alt="menu-logo"></button>
+                <div class="menu__devider devider menu__button_visible-768"></div>
+                <div class="menu__logo menu__button"> <a class=" menu__link  logo" href="#"><img src="picture/header/company_logo.svg" alt="company-logo"></a></div>
+            </div>
+            <div class="menu__right">
+                <button class="menu__call menu__button menu__button_visible-768"><img src="picture/header/call.svg" alt="call-logo"></button>
+                <button class="menu__chat menu__button menu__button_visible-768"><img src="picture/header/chat.svg" alt="chat-logo"></button>
+                <button class="menu__profile menu_button menu__button_visible-768"><img src="picture/header/profile.svg" alt="profile-logo"></button>
+                <div class="menu__devider devider"></div>
+                <button class="menu__repair menu__button "><img src="picture/header/repair.svg" alt="repair-logo"></button>
+                <button class="menu__check-status menu__button "><img src="picture/header/check_status.svg" alt="check_status-logo"></button>
+            </div>
+        </div>
+</header>
     <main class="page">
-       <div class="page__header"><h1 class="page__title title">Услуги и сервисы</h1></div>
-            <div class="page__repair main-button"> <button class="page__button  repair-main"><img src="picture/header/repair.svg" alt="repair-logo"></button></div>
-            <div class="page__check_status main-button"> <button class="page__button check_status-main"><img src="picture/header/check_status.svg" alt="check_status-logo"></button></div>
+            <h1 class="page__title title">Услуги и сервисы</h1>
+            <div class="page__div">
+                <button class="page__repair-main page__button page__button_visible-1120">
+                    <span class="page__span">Оставить заявку</span><img src="picture/header/repair.svg" alt="repair-logo">
+                </button>
+            </div>
+            <div class="page__div">
+                <button class="page__check-status-main page__button page__button_visible-1120">
+                    <span class="page__span">Статус ремонта</span><img src="picture/header/check_status.svg" alt="check-status">
+                </button>
+            </div>
            <nav class="page__group">
-               <div class="page__div  repaired-devices"><a href="#" class="page__link devices">Ремонтируемые устройства</a></div>
-               <div class="page__div repaired-brands"><a href="#" class="page__link brands">Ремонтируемые бренды</a></div>
-               <div class="page__div additional-services"><a href="#" class="page__link additional-services">Дополнительные услуги</a></div>
-               <div class="page__div price"><a href="#" class="page__link price">Цены на услуги</a></div>
-               <div class="page__div addresses"><a href="#" class="page__link addresses">Адреса сервисных центров</a></div>
-               <div class="page__div vip-price"><a href="#" class="page__link vip-price ">Специальные цены</a></div>
-               <div class="page__div reviews "><a href="#" class="page__link reviews">Отзывы</a></div>
+                <ul class="page__nav">
+                    <li class="page__element page__element_hover"><a href="#" class="page__link devices">Ремонтируемые устройства</a></li>
+                    <li class="page__element"><a href="#" class="page__link brands">Ремонтируемые бренды</a></li>
+                    <li class="page__element"><a href="#" class="page__link price">Цены на услуги</a></li>
+                    <li class="page__element"> <a href="#" class="page__link addresses">Адреса сервисных центров</a></li>
+                    <li class="page__element "><a href="#" class="page__link vip-price ">Специальные цены</a></li>
+                    <li class="page__element page__element_position-1120"> <a href="#" class="page__link page__devices_margin">Отзывы</a></li>
+                </ul>
            </nav>
-            <section class="company">
+            <div class="company">
                 <div class="company__text">
-                    <p class="company__first-p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="company__second-p">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
-                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                    <p class="company__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        <br><br>
+                        <span class="company__span company__span_visible-768">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                        </span>
+                        <span class="company__span company__span_visible-1120">
+                            что подтверждает большое количество постоянных клиентов.Мы гордимся тем, что к нам обращаются
+                            по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </span>
+                    </p>
+                    <div class="company__button"><button class="company__more">Читать далее</button></div>
                 </div>
-                <div class="company__button"><button class="company__more">Читать далее</button></div>
-                <div class="company__plate"></div>
-            </section>
+                <div class="company__plate">
+                    <img class="company__image company__image_disable-768" src="picture/main/cps-plate-320.png" alt="cps-plate" width="320" height="176">
+                    <img class="company__image company__image_disable-320 company__image_visible-768" src="picture/main/cps-plate-360.png" alt="cps-plate" width="360" height="208">
+                    <img class="company__image company__image_disable-320 company__image_visible-1120" src="picture/main/cps-plate-532.png" alt="cps-plate" width="532" height="307">
+                </div>
+            </div>
     </main>
 </body>
 </html>
