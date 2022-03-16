@@ -250,10 +250,9 @@
 
     .company__plate {
         display: flex;
-        flex-basis: 50%;
-        min-width: 320px;
-        min-height: 176px;
-
+        width: 320px;
+        align-self: flex-end;
+        margin: 0 auto;
 
     }
     .company__image-768_disable-320,
@@ -266,9 +265,8 @@
     }
     .company__image-320_width {
         display: flex;
-        flex-basis: 100%;
-        max-width: 368px;
-        max-height: 208px;
+        align-self: flex-end;
+
     }
 
 @media (min-width: 768px) {
@@ -483,6 +481,7 @@
         }
 
         .company {
+
             display: flex;
             flex-direction: row;
             justify-content: space-around;
