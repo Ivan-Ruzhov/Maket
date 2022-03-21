@@ -51,7 +51,7 @@
 .header__button {
     border: none;
     background: #FFFFFF;
-
+    cursor: pointer;
 }
 
 .header__button_hover:hover {
@@ -60,11 +60,25 @@
     filter: opacity(0.3);
 }
 
+.header__button_focus:focus {
+    filter: opacity(0.3);
+}
+
+.header__link_hover:hover {
+    transition-duration: 0.9s;
+    transition-property: transform;
+    transform: scale(1.1);
+
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+}
+.navigation {
+    display: flex;
 }
 
 .list {
@@ -75,33 +89,55 @@
 
 .list__item {
    list-style-type: none;
-    margin: 0 0 32px 24px;
+
+}
+
+.list__link {
+    display: flex;
+    margin: 0 0 32px 10px;
     font-family: "TT Lakes", serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
     position: relative;
     letter-spacing: -0.2px;
-}
-
-.list__link {
     text-decoration: none;
-    line-height: 24px;
+    color: black;
 }
-
+/*
 .list__link_hover:hover {
     transition-duration: 2s;
     transition-property: width;
     transition-timing-function: ease-in;
 
 }
+*/
 
-.list__item_hover:hover::before {
+.list__link_hover:hover {
+    transition-duration: 0.1s;
+    transform: translateX(20px);
+
+}
+
+.list__link_hover:hover::before {
    content: url("picture/picture 1.4/li/highlight.svg");
     width: 4px;
     height: 32px;
     position: absolute;
-    left: -24px;
+    left: -30px;
+    top: -5px;
+}
+
+.list__link_focus:focus {
+    transform: translateX(20px);
+}
+
+.list__link_focus:focus::before {
+    content: url("picture/picture 1.4/li/highlight.svg");
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: -30px;
     top: -5px;
 }
 
@@ -123,6 +159,7 @@
 .footer__button {
     border: none;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer__button_hover:hover {
@@ -130,6 +167,9 @@
     filter: opacity(0.5);
 }
 
+.footer__button_focus:focus {
+    filter: opacity(0.5);
+}
 .footer__mail {
     display: flex;
     font-size: 16px;
@@ -173,7 +213,26 @@
     background-color: #FFFFFF;
 }
 
+.footer__element {
+    cursor: pointer;
+}
+
 .footer__element:hover {
+    transition-duration: 0.9s;
+    transition-property: color;
+    color: red;
+}
+
+.footer__element_focus:focus {
+    color: red;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__link_hover:hover {
     transition-duration: 0.9s;
     transition-property: color;
     color: red;
