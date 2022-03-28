@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TTLakes-Regular"),
+    url("fonts/TTLakes-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TTLakes-Medium"),
+    url("fonts/TTLakes-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "TT Lakes", serif;
+}
+
+.brands {
+    width: 320px;
+    height: 234px;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #D9FFF5;
+}
+
+.text {
+    padding: 16px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.text__repair-brands {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.brands {
+    background: #F8F8F8;
+    position: relative;
+    height: 154px;
+}
+.brands::after {
+    position:absolute;
+    content:"";
+    right:0;
+    top: 0;
+    width: 24px;
+    height:72px;
+    background: linear-gradient(to right, rgba(0,0,0,0),  #F8F8F8);
+    z-index: 100;
+}
+.swiper-wrapper {
+    position: relative;
+    padding-left: 16px;
+    background: #F8F8F8;
+}
+
+.swiper {
+    background: #F8F8F8;
+    height: 120px;
+}
+
+
+
+.swiper-slide {
+    display: flex;
+    width: 240px;
+    height: 72px;
+}
+
+.slides__link {
+    width: 240px;
+    height: 72px;
+}
+
+.button {
+    display: none;
+}
+
+
+.image-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 14px;
+    background: #B5B6BC;
+
+}
+
+
+@media (min-width: 768px) {
+    .brands {
+        min-width: 768px;
+        height: auto;
+    }
+
+    .text {
+        height: 56px;
+    }
+    .text__repair-brands {
+        padding-left: 10px;
+    }
+    .swiper {
+        display: flex;
+        flex-direction: column;
+        background: #F8F8F8;
+    }
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        min-width: 768px;
+        padding: 0;
+
+    }
+
+    .swiper-slide {
+        margin: 16px 0 0 24px;
+        max-width: 224px;
+        height: 72px;
+    }
+    .swiper-slide img {
+        max-width: 224px;
+        height: 72px;
+    }
+    .button {
+        position: relative;
+        display: block;
+        margin: 24px 0 34px 57px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        tab-index: 1;
+        width: 101px;
+    }
+    .button:before {
+        position: absolute;
+        left: -33px;
+        content: url("picture/picture 1.5/button/before.svg");
+    }
+    .arrow-up:before {
+        position: absolute;
+        left: -33px;
+        content: url("picture/picture 1.5/button/before.svg");
+        transform: rotate(180deg)
+        translateY(6px);
+    }
+     .button {
+        border: none;
+        outline: none;
+        background-color: #F8F8F8;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+    .swiper-hide {
+        display: none;
+    }
+    .button:hover {
+        opacity: 0.5;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brands {
+        width: 1120px;
+    }
+
+    .text {
+        width: 1120px;
+        height: 56px;
+    }
+    .text__repair-brands {
+        min-width: 338px;
+        padding-left: 18px;
+    }
+    .swiper-wrapper {
+        min-width: 1120px;
+
+    }
+    .swiper-slide {
+        margin: 24px 0 0 32px;
+        width: 240px;
+        height: 72px;
+    }
+    .slides__link {
+        width: 240px;
+        height: 72px;
+    }
+
+    .slides__link img {
+        width: 240px;
+        height: 72px;
+    }
+}
